@@ -1,0 +1,158 @@
+* {
+  /*text-aling: center;*/
+  font-family:'Josefin Sans', sans-serif;
+  font-size: 25px;
+  aling-items: center;
+  justify-content: center;
+ 
+}
+
+
+body {
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right:0px;
+}
+
+#main-header{
+    background-image: url(./image/07.jpg);
+    height: 120px;
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+    width: 100%;
+    background-position-x: center;
+    background-size: cover;
+    margin: 0px;
+    color: black;
+    font-weight: normal;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 60px;
+    /*position: fixed; esto es para que se quede fijo aunque se desplaze el usuario hacia abajo, aún no se agrega.*/
+}
+
+p, header {
+  margin-left: 600px;
+}
+
+#centerbtn{
+  margin-left: 450px;
+}
+
+#repeatbtn{
+  margin-left: 450px;
+  margin-top: 600px;
+  
+}
+
+#textboxes{
+  margin-top: 40px;
+  
+}
+
+
+  
+
+
+button {
+    padding: 15px;
+    background-color: #132639;
+    border-radius: 10px;
+    border: 3px double #0d1a26;
+    cursor: pointer;
+    color: #1f7a3d;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 15px 25px 15px 25px;
+}
+
+button:hover{
+    opacity: 0.6;
+    background-color: #3e8e41;
+    text-decoration: none;
+   /* box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); */
+  }
+  
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+main{
+    float: left;
+    margin-left: 550px;
+    margin-right: 10px;
+}
+
+figure{
+    float: right;
+    margin-left: 60px;
+    margin-right: 450px;
+  
+}
+#btnBike, #btnMoto, #btnCar {
+  display:block
+}
+
+#instagram,#facebook,#twitter {
+    margin: 15px 25px 15px 25px;
+}
+
+a {
+  opacity: 0.4;
+  color: #132639;
+}
+
+footer {
+   position:fixed;
+   left:0px;
+   bottom:15px;
+   height:30px;
+   width:100%;
+   background:##1f7a3d;
+
+}
+
+/*estos son los estilos para la tabla de la primera pantalla
+
+table.minimalistBlack {
+  border: 3px solid #000000;
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+table.minimalistBlack td, table.minimalistBlack th {
+  border: 3px solid #000000;
+  padding: 5px 4px;
+}
+table.minimalistBlack tbody td {
+  font-size: 13px;
+}
+table.minimalistBlack thead {
+  background: #CFCFCF;
+  background: -moz-linear-gradient(top, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+  background: -webkit-linear-gradient(top, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+  background: linear-gradient(to bottom, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+  border-bottom: 3px solid #000000;
+}
+table.minimalistBlack thead th {
+  font-size: 15px;
+  font-weight: bold;
+  color: #000000;
+  text-align: left;
+}
+table.minimalistBlack tfoot {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+  border-top: 3px solid #000000;
+}
+table.minimalistBlack tfoot td {
+  font-size: 14px;
+}
+*/
