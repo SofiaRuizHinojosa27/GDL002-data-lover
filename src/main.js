@@ -1,10 +1,12 @@
 
 function motoAccidents(){
+
   let listMoto=window.datalover.motoAccident;
   //console.log(listMoto);
   document.getElementById("Results").value= listMoto;
   //document.getElementById("ResultsYear").value=listAccidentMotoYear;
 }
+
 document.getElementById("btnMoto").addEventListener('click',motoAccidents);
 
 function bikeAccidents(){
@@ -32,3 +34,4 @@ document.getElementById("Clean").addEventListener('click',clean);
 //   document.getElementById("AnualData").style.display="block";
 // }
 // document.getElementById("btnAnual").addEventListener('click',anualData);
+

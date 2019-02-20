@@ -5,6 +5,8 @@
   aling-items: center;
   justify-content: center;
 
+ 
+
 }
 
 
@@ -15,7 +17,9 @@ body {
 }
 
 #main-header{
-    background-image: url(https://www.ciclosfera.com/wp-content/uploads/2017/08/ciclismo-londres.jpg);
+
+    background-image: url(./image/07.jpg);
+
     height: 120px;
     background-repeat-x: no-repeat;
     background-repeat-y: no-repeat;
@@ -44,14 +48,16 @@ p, header {
   margin-left: 450px;
   margin-top: 600px;
 
+  
+
 }
 
 #textboxes{
   margin-top: 40px;
-
 }
 
 
+  
 
 
 
@@ -77,6 +83,7 @@ button:hover{
    /* box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); */
   }
 
+
 button:active {
   background-color: #3e8e41;
   box-shadow: 0 5px #666;
@@ -94,7 +101,9 @@ figure{
     margin-left: 60px;
     margin-right: 450px;
 
+  
 }
+
 #btnBike, #btnMoto, #btnCar {
   display:block
 }
