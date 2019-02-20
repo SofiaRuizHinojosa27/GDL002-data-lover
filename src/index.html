@@ -5,39 +5,53 @@
     <title>IN-BIKE-ME</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600i,700|Nunito+Sans:400,700" rel="stylesheet">
   </head>
+ <div id="root"></div>
   <body>
-    <header>IN-BIKE-ME</header>
-    <p>Bienvenidos</p>
-    <button type="button" id="btnCompare" name="button">Comparativo</button>
-    <button type="button" id="btnAnual" name="button">Datos anuales</button>
+      <header id= "main-header">IN-BIKE-ME</header>
+      <p>Bienvenidos</p>
+<!-- <div id="pag1"> -->
+<div id="centerbtn">
+  <button type="button" id="btnCompare" name="button">Comparativa</button>
+  <button type="button" id="btnAnual" name="button">Datos anuales</button>
+</div>
+<!-- </div> -->
 
     <section id="AnualData">
       <header>Datos por año</header>
-      <button type="button" id="btnBike" name="button"><i class="fas fa-bicycle"></i></button>
-      <button type="button" id="btnMoto" name="button"><i class="fas fa-motorcycle"></i></button>
-      <button type="button" id="btnCar" name="button"><i class="fas fa-car-side"></i></button>
-      <!-- <aside class="" id="anualResult"> -->
-        <p><textarea disabled name="origen" id="Results" rows="20" cols="10"></textarea></p>
-        <p><textarea disabled name="origen" id="ResultsYear" rows="20" cols="10"></textarea></p>
-        
-        <!-- la cambiaremos a una tabla para mostrar de manera mas entendible los resultados -->
+      <main>
+        <button type="button" id="btnBike" name="button"><i class="fas fa-bicycle"></i></button>
+        <button type="button" id="btnMoto" name="button"><i class="fas fa-motorcycle"></i></button>
+        <button type="button" id="btnCar" name="button"><i class="fas fa-car-side"></i></button>
+      </main>
+      <figure id = "textboxes">
+        <p><textarea disabled name="origen" id="Results" rows="15" cols="10"></textarea></p>
+        <p><textarea disabled name="origen" id="ResultsYear" rows="15" cols="10"></textarea></p>
+      </figure>
+      </section>
 
-        <button type="button" id="Clean" name="button">Limpiar Datos</button>
-      <!-- </aside> -->
-    </section>
-    <footer><i class="fab fa-instagram"></i><i class="fab fa-facebook-square">
-    </i><i class="fab fa-twitter-square"></i>
+  <div id= "repeatbtn">
+    <button type="button" id="Clean" name="button">Limpiar Datos</button>
+    <button type="button" id="Clean" name="button">Volver</button>
+  </div>
+
+    <footer>
+      <a href= "http://www.instagram.com"><i id= "instagram" class="fab fa-instagram"></i></a>
+      <a href= "http://www.facebook.com"><i id = "facebook" class="fab fa-facebook-square"></i></a>
+      <a href= "http://www.twitter.com"><i id= "twitter" class="fab fa-twitter-square"></i></a>
     </footer>
+
+
+  <body>
     <div id="root"></div>
     <script src="./data/injuries/injuries.js"></script>
     <!-- <script src="./data/pokemon/pokemon.js"></script> -->
     <!-- <script src="./data/steam/steam.js"></script> -->
     <!-- <script src="./data/worldbank/worldbank.js"></script> -->
     <!-- <script src="./data/lol/lol.js"></script> -->
-
     <script src="data.js"></script>
     <script src="main.js"></script>
-
   </body>
+
 </html>
