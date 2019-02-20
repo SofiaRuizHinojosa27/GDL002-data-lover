@@ -1,9 +1,9 @@
 
 function motoAccidents(){
   let listMoto=window.datalover.motoAccident;
-  console.log(listMoto);
+  //console.log(listMoto);
   document.getElementById("Results").value= listMoto;
-  document.getElementById("ResultsYear").value=listAccidentMotoYear;
+  //document.getElementById("ResultsYear").value=listAccidentMotoYear;
 }
 document.getElementById("btnMoto").addEventListener('click',motoAccidents);
 
