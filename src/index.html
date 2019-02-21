@@ -9,27 +9,30 @@
   </head>
  <div id="root"></div>
   <body>
-      <header id= "main-header">IN-BIKE-ME</header>
-      <p>Bienvenidos</p>
-<!-- <div id="pag1"> -->
-<div id="centerbtn">
-  <button type="button" id="btnCompare" name="button">Comparativa</button>
-  <button type="button" id="btnAnual" name="button">Datos anuales</button>
-</div>
-<!-- </div> -->
 
-    <section id="AnualData">
+    <header id= "main-header">IN-BIKE-ME</header>
+    <p id= "introtxt">Bienvenidos</p>
+  <div id="centerbtn">
+    <button type="button" id="btnCompare" name="button">Comparativa</button>
+    <button type="button" id="btnAnual" name="button">Datos anuales</button>
+ </div>
+
+    <section  id="AnualData">
+
       <header>Datos por año</header>
+
       <main>
         <button type="button" id="btnBike" name="button"><i class="fas fa-bicycle"></i></button>
         <button type="button" id="btnMoto" name="button"><i class="fas fa-motorcycle"></i></button>
         <button type="button" id="btnCar" name="button"><i class="fas fa-car-side"></i></button>
       </main>
+
       <figure id = "textboxes">
-        <p><textarea disabled name="origen" id="Results" rows="15" cols="10"></textarea></p>
-        <p><textarea disabled name="origen" id="ResultsYear" rows="15" cols="10"></textarea></p>
+        <p id= "box1"><textarea disabled name="origen" id="ResultsYear" rows="35" cols="20"></textarea></p>
+        <p id= "box2"><textarea disabled name="origen" id="Results" rows="35" cols="20"></textarea></p>
       </figure>
-      </section>
+
+    </section>
 
   <div id= "repeatbtn">
     <button type="button" id="Clean" name="button">Limpiar Datos</button>
