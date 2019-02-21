@@ -1,31 +1,33 @@
+// function time(){
+//   let yearAccident=window.datalover.accidentYear;
+//   document.getElementById("ResultsYear").value= yearAccident;
+// }
+// document.getElementById("btnMoto").addEventListener('click',time);
 
 function motoAccidents(){
   let listMoto=window.datalover.motoAccident;
-  //console.log(listMoto);
   document.getElementById("Results").value= listMoto;
-  //document.getElementById("ResultsYear").value=listAccidentMotoYear;
 }
 document.getElementById("btnMoto").addEventListener('click',motoAccidents);
 
 function bikeAccidents(){
-  let listBike=window.datalover.listAccidentBike;
-  document.getElementById("ResultsYear").value=listAccidentBikeYear;
-  document.getElementById("Results").value=listAccidentBike;
+  let listBike=window.datalover.bikeAccident;
+  document.getElementById("Results").value=listBike;
   }
 document.getElementById("btnBike").addEventListener('click',bikeAccidents);
 
 function carAccidents(){
-  let listBike=window.datalover.listAccidentCar;
-  document.getElementById("ResultsYear").value=listAccidentCarYear;
-  document.getElementById("Results").value=listAccidentCar;
+  let listCar=window.datalover.carAccident;
+  document.getElementById("Results").value=listCar;
   }
 document.getElementById("btnCar").addEventListener('click',carAccidents);
 
 function clean(){
-  document.getElementById("ResultsYear").value="";
-  document.getElementById("Results").value="";
+  document.getElementById("ResultsYear").value= "";
+  document.getElementById("Results").value= "";
 }
 document.getElementById("Clean").addEventListener('click',clean);
+
 
 // function anualData(){
 //   document.getElementById("pag1").style.display="none";
