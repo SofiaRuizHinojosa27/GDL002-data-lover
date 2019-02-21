@@ -4,9 +4,7 @@
   font-size: 25px;
   aling-items: center;
   justify-content: center;
-
  
-
 }
 
 
@@ -17,9 +15,7 @@ body {
 }
 
 #main-header{
-
     background-image: url(./image/07.jpg);
-
     height: 120px;
     background-repeat-x: no-repeat;
     background-repeat-y: no-repeat;
@@ -36,29 +32,44 @@ body {
     /*position: fixed; esto es para que se quede fijo aunque se desplaze el usuario hacia abajo, aún no se agrega.*/
 }
 
-p, header {
-  margin-left: 600px;
+header {
+    width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#introtxt{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  
+}
+
+#box1,#box2{
+    float: left;
+    margin: 25px;
+    
 }
 
 #centerbtn{
   margin-left: 450px;
 }
 
-#repeatbtn{
+/*#repeatbtn{
   margin-left: 450px;
   margin-top: 600px;
-
   
-
 }
-
+*/
 #textboxes{
-  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  
 }
 
 
   
-
 
 
 button {
@@ -82,8 +93,7 @@ button:hover{
     text-decoration: none;
    /* box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); */
   }
-
-
+  
 button:active {
   background-color: #3e8e41;
   box-shadow: 0 5px #666;
@@ -91,21 +101,20 @@ button:active {
 }
 
 main{
-    float: left;
-    margin-left: 550px;
-    margin-right: 10px;
-}
-
-figure{
-    float: right;
-    margin-left: 60px;
-    margin-right: 450px;
-
+  align-items: center;
+  width: 100%;
+  display: flex; 
   
 }
 
+
+
 #btnBike, #btnMoto, #btnCar {
   display:block
+}
+
+#repeatbtn {
+  align-items: center;
 }
 
 #instagram,#facebook,#twitter {
