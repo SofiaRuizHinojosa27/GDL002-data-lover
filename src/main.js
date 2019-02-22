@@ -8,9 +8,11 @@ document.getElementById("btnBike").addEventListener('click',time);
 document.getElementById("btnCar").addEventListener('click',time);
 
 function motoAccidents(){
+
   let listMoto=window.datalover.motoAccident;
 listMoto.forEach(element=>document.getElementById("Results").value += element + "\n");
 }
+
 document.getElementById("btnMoto").addEventListener('click',motoAccidents);
 
 function bikeAccidents(){
@@ -30,3 +32,13 @@ function clean(){
   document.getElementById("Results").value= "";
 }
 document.getElementById("Clean").addEventListener('click',clean);
+<<<<<<< HEAD
+=======
+
+// function anualData(){
+//   document.getElementById("pag1").style.display="none";
+//   document.getElementById("AnualData").style.display="block";
+// }
+// document.getElementById("btnAnual").addEventListener('click',anualData);
+
+>>>>>>> f1cb14556077f37ccaa9403a0a8a1d13e77181f5
