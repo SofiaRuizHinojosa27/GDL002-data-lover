@@ -1,7 +1,9 @@
+
 function showAnualData(){
 document.getElementById("AnualData").style.display = 'block';
 }
 document.getElementById("btnAnual").addEventListener('click',showAnualData);
+
 
 function time(){
   let yearAccident=window.datalover.yearAccident;
@@ -21,13 +23,15 @@ document.getElementById("btnMoto").addEventListener('click',motoAccidents);
 function bikeAccidents(){
   let listBike=window.datalover.bikeAccident;
   listBike.forEach(element=>document.getElementById("Results").value += element + "\n");
+
 }
+
 document.getElementById("btnBike").addEventListener('click',bikeAccidents);
 
 function carAccidents(){
   let listCar=window.datalover.carAccident;
   listCar.forEach(element=>document.getElementById("Results").value += element + "\n");
-}
+
 document.getElementById("btnCar").addEventListener('click',carAccidents);
 
 function clean(){
