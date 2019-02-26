@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>🚵IN-BIKE-ME</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -13,7 +14,7 @@
   <header id= "main-header">IN-BIKE-ME...<i class="fas fa-bicycle"></i></header>
   
      <p id= "introtxt">Somos una agrupación ciclista buscando fomentar, promover e invitar a toda la ciudadanía a utilizar la bicicleta como medio de transporte y así contribuir a una mejor calidad de vida en nuestras ciudades.<br>¡Por ciudades más seguras, más verdes y más felices!</p>
-     <p id= "introIcon"><i class="fas fa-leaf"></i><p>
+     <p id= "introtxt"><i class="fas fa-leaf"></i><p>
      
    <div id="centerbtn">  
      <button type="button" id="btnCompare" name="button">Comparativa</button>
@@ -21,21 +22,33 @@
    </div>
  
  <section id="AnualData" style="display:none;">
-  <header>Datos anuales de accidentes</header>
+  <header>Datos por año</header>
   <main>
     <button type="button" id="btnBike" name="button"><i class="fas fa-bicycle"></i></button>
     <button type="button" id="btnMoto" name="button"><i class="fas fa-motorcycle"></i></button>
     <button type="button" id="btnCar" name="button"><i class="fas fa-car-side"></i></button>
   </main>
-      
-  <figure id = "textboxes">
+  
+<!--<div>
+<select onchange= "alert(this.value)" ><option value= "3">cadena de texto</option><option value= "5">cadena de texto2</option></select>
+</div> -->  
+  
+<div id= "Results">  
+<table>
+  <tr> 
+    <th scope = 'row'></th>
+    <th></th>
+    <th></th>
+  </tr>  
+</table>
+</div>      
+<!--  <figure id = "textboxes">
     <p id= "box1"><textarea disabled name="origen" id="ResultsYear" rows="35" cols="20"></textarea></p>
     <p id= "box2"><textarea disabled name="origen" id="Results" rows="35" cols="20"></textarea></p>
-  </figure>
+  </figure> -->
       
   <div id= "repeatbtn">
      <button type="button" id="Clean" name="button">Limpiar Datos</button>
-     <button type="button" id="btnReturn" name="button">Volver</button>
   </div>      
  </section>
       
