@@ -3,6 +3,12 @@ document.getElementById("AnualData").style.display = 'block';
 }
 document.getElementById("btnAnual").addEventListener('click',showAnualData);
 
+function showCompare(){
+document.getElementById("compare").style.display = 'block';
+}
+document.getElementById("btnCompare").addEventListener('click',showCompare);
+
+
 function time(tipo){
   let yearAccident=window.datalover.yearAccident;
   let out= "<table class= 'finalTable'><tr><th>Año</th><th>Cantidad de accidentes</th></tr>";

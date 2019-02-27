@@ -34,7 +34,7 @@ body {
     /*position: fixed; esto es para que se quede fijo aunque se desplaze el usuario hacia abajo, aún no se agrega.*/
 }
 
-header {
+header, h2 {
     width: 100%;
     display: flex;
     align-items: center;
@@ -42,7 +42,7 @@ header {
     margin-bottom: 2%;
 }
 
-#introtxt{
+#introtxt, #introtxt2 {
   width: 100%;
   display: flex;
   align-items: center;
@@ -54,13 +54,16 @@ header {
     margin: 25px;
 }*/
 
-#centerbtn{
+#centerbtn, #comparebts, #yearbts{
   width: 100%;
   display: flex;
   align-items: center;
   text-align: center;  
 }
 
+#yearbts {
+  padding-bottom: 2%;
+}
 
 /*#textboxes{
   width: 100%;
@@ -125,6 +128,10 @@ main{
   width: 100%;
   display: flex;
   padding: 2%;
+}
+
+#biciIcon {
+  padding: 4%;
 }
 
 #instagram,#facebook,#twitter {

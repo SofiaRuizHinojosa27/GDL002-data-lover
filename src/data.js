@@ -1,4 +1,3 @@
-
 window.datalover = {
   
   yearAccident:yearAccident()
@@ -19,8 +18,9 @@ function yearAccident(){
   }
   return yearTime;
 }
-
-
+ 
+let dataNew = yearAccident();
+console.log(dataNew);
 /*const example = () => {
   return 'example';
 };
