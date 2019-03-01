@@ -1,77 +1,120 @@
 <!DOCTYPE html>
-<html>
+<html lang= "es">
   <head>
     <meta charset="utf-8">
-    <title>🚵IN-BIKE-ME</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>🚵IN-BIKE-ME</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600i,700|Nunito+Sans:400,700" rel="stylesheet">
+   <!-- <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600i,700|Nunito+Sans:400,700" rel="stylesheet"> -->
   </head>
+  <body>
 <div id="root">
- <body>
-  
-  <header id= "main-header">IN-BIKE-ME...<i class="fas fa-bicycle"></i></header>
-  
+
+
+<header id= "main-header">IN-BIKE-ME...<i class="fas fa-bicycle"></i></header>
      <p id= "introtxt">Somos una agrupación ciclista buscando fomentar, promover e invitar a toda la ciudadanía a utilizar la bicicleta como medio de transporte y así contribuir a una mejor calidad de vida en nuestras ciudades.<br>¡Por ciudades más seguras, más verdes y más felices!</p>
-     <p id= "introIcon"><i class="fas fa-leaf"></i><p>
-     
-   <div id="centerbtn">  
-     <button type="button" id="btnCompare" name="button">Comparativa</button>
-     <button type="button" id="btnAnual" name="button">Datos anuales</button>
-   </div>
- 
- <section id="AnualData" style="display:none;">
-  <header>Datos anuales de accidentes</header>
-  <main>
+     <p id= "introtxt2"><i class="fas fa-leaf"></i><p>
+
+ <div id="centerbtn">
+   <button type="button" id="btnCompare" name="button">Comparativa</button>
+   <button type="button" id="btnAnual" name="button">Datos anuales</button>
+ </div>
+
+<section id="AnualData" style="display:none;">
+  <h2>Datos por año</h2>
+  <div id= "btsAnual">
     <button type="button" id="btnBike" name="button"><i class="fas fa-bicycle"></i></button>
     <button type="button" id="btnMoto" name="button"><i class="fas fa-motorcycle"></i></button>
     <button type="button" id="btnCar" name="button"><i class="fas fa-car-side"></i></button>
-  </main>
-      
-  <figure id = "textboxes">
-    <p id= "box1"><textarea disabled name="origen" id="ResultsYear" rows="35" cols="20"></textarea></p>
-    <p id= "box2"><textarea disabled name="origen" id="Results" rows="35" cols="20"></textarea></p>
-  </figure>
-      
+  </div>
+
+<!-- -->
+
+ <div id= "Results">
+  <table>
+   <tr>
+    <th scope = "row"></th>
+    <th></th>
+    <th></th>
+  </tr>
+  </table>
+ </div>
+
   <div id= "repeatbtn">
      <button type="button" id="Clean" name="button">Limpiar Datos</button>
-     <button type="button" id="btnReturn" name="button">Volver</button>
-  </div>      
- </section>
-      
- <footer>
-    <a href= "http://www.instagram.com"><i id= "instagram" class="fab fa-instagram"></i></a>
-    <a href= "http://www.facebook.com"><i id = "facebook" class="fab fa-facebook-square"></i></a>
-    <a href= "http://www.twitter.com"><i id= "twitter" class="fab fa-twitter-square"></i></a>
- </footer>
-       
-  <body>
+     <button type="button" id="btnback" name="button">Volver</button>
+  </div>
+</section>
 
-      <header>Datos por año</header>
+<section id= "compare" style="display:none;">
+ <header>Comparar número de accidentes de transporte por año</header>
+  <h2>Elige el año que deseas comparar:</h2>
 
-      <main>
-        <button type="button" id="btnBike" name="button"><i class="fas fa-bicycle"></i></button>
-        <button type="button" id="btnMoto" name="button"><i class="fas fa-motorcycle"></i></button>
-        <button type="button" id="btnCar" name="button"><i class="fas fa-car-side"></i></button>
-      </main>
+<div id="yearbts">
+ <select id= "yearValue">
+  <option value="6">1990</option>
+  <option value="7">1991</option>
+  <option value="8">1992</option>
+  <option value="9">1993</option>
+  <option value="10">1994</option>
+  <option value="11">1995</option>
+  <option value="12">1996</option>
+  <option value="13">1997</option>
+  <option value="14">1998</option>
+  <option value="15">1999</option>
+  <option value="16">2000</option>
+  <option value="17">2001</option>
+  <option value="18">2002</option>
+  <option value="19">2003</option>
+  <option value="20">2004</option>
+  <option value="21">2005</option>
+  <option value="22">2006</option>
+  <option value="23">2007</option>
+  <option value="24">2008</option>
+  <option value="25">2009</option>
+  <option value="26">2010</option>
+  <option value="27">2011</option>
+  <option value="28">2012</option>
+  <option value="29">2013</option>
+  <option value="30">2014</option>
+  <option value="31">2015</option>
+ </select>
+</div>
 
-      <figure id = "textboxes">
-        <p id= "box1"><textarea disabled name="origen" id="ResultsYear" rows="35" cols="20"></textarea></p>
-        <p id= "box2"><textarea disabled name="origen" id="Results" rows="35" cols="20"></textarea></p>
-      </figure>
+<div id= "comparebts">
+  <i id="biciIcon" class="fas fa-bicycle"></i> vs <br><button type="button" id="compareMoto" name="button"><i class="fas fa-motorcycle"></i></button><button type="button" id="compareCar" name="button"><i class="fas fa-car-side"></i></button>
+</div>
 
-    </section>
+<div id= "compareTxt">
+   <p>En el año <label id="lblYear"></label> hubo <label id="lblBici"></label> accidentes en bicicleta.</p>
+   <p>Mientras que sucedieron <label id="lblResult"></label> de accidentes en <label id="lblTransport"></label>.</p>
+   <p>Es decir: <label id="lblDiference"></label> accidentes más que en bicicleta.</p>
+</div>
 
-  <div id= "repeatbtn">
-    <button type="button" id="Clean" name="button">Limpiar Datos</button>
-    <button type="button" id="Clean" name="button">Volver</button>
-  </div>    <footer>
-      <a href= "http://www.instagram.com"><i id= "instagram" class="fab fa-instagram"></i></a>
-      <a href= "http://www.facebook.com"><i id = "facebook" class="fab fa-facebook-square"></i></a>
-      <a href= "http://www.twitter.com"><i id= "twitter" class="fab fa-twitter-square"></i></a>
-    </footer>
-<body>
-    <div id="root"></div>
+<!--<div>
+<p>Cantidad más alta de accidentes</p>
+<button type="button" id="" name="button">Bicicleta</button><label id="lblBike"></label>
+<button type="button" id="" name="button">Motocicleta</button><label id="lblMoto"></label>
+<button type="button" id="" name="button">Automovil</button><label id="lbl"></label>
+</div> -->
+
+<div id= "resultsCompare"></div>
+
+ <div id= "repeatbtn2">
+     <button type="button" id="Clean2" name="button">Limpiar Datos</button>
+     <button type="button" id="btnback2" name="button">Volver</button>
+  </div>
+</section>
+
+<footer>
+  <a href= "http://www.instagram.com"><i id= "instagram" class="fab fa-instagram"></i></a>
+  <a href= "http://www.facebook.com"><i id = "facebook" class="fab fa-facebook-square"></i></a>
+  <a href= "http://www.twitter.com"><i id= "twitter" class="fab fa-twitter-square"></i></a>
+</footer>
+
+ <!-- <body> -->
+</div>
     <script src="./data/injuries/injuries.js"></script>
     <!-- <script src="./data/pokemon/pokemon.js"></script> -->
     <!-- <script src="./data/steam/steam.js"></script> -->
@@ -80,5 +123,4 @@
     <script src="data.js"></script>
     <script src="main.js"></script>
   </body>
-
 </html>

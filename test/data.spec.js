@@ -1,12 +1,14 @@
 require('../src/data.js');
+require('../src/data/injuries/injuries.json');
 
 
-describe('example', () => {
-  it('is a function', () => {
-    expect(typeof example).toBe('function');
+describe('function yearAccident', () => {
+  it('should be a function', () => {
+    expect(window.datalover.yearAccident()).toBe("function");
+  });
   });
 
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
-  });
-});
+//   it('returns `example`', () => {
+//     expect(example()).toBe('example');
+//   });
+// });
