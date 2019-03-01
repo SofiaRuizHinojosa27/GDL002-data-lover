@@ -10,7 +10,7 @@ document.getElementById("btnCompare").addEventListener('click',showCompare);
 
 
 function time(tipo){
-  let yearAccident=window.datalover.yearAccident;
+  let yearAccident=window.datalover.yearAccident(window.INJURIES);
   let out= "<table class= 'finalTable'><tr><th>Año</th><th>Cantidad de accidentes</th></tr>";
   yearAccident.forEach((element)=> {out += "<tr><td>" + element.Year + "</td><td>"+ element[tipo] +"</td></tr>"; });
   document.getElementById("Results").innerHTML = out + "</table>";
@@ -21,7 +21,7 @@ document.getElementById("btnBike").addEventListener('click',()=>{time("Bicicleta
 document.getElementById("btnCar").addEventListener('click',()=>{time("Automovil");});
 
 function compare(contra,Year){
-  let yearAccident=window.datalover.yearAccident[Year];
+  let yearAccident=window.datalover.yearAccident(window.INJURIES)[Year];
   document.getElementById("lblYear").innerHTML = yearAccident.Year;
   document.getElementById("lblBici").innerHTML= yearAccident.Bicicleta;
   document.getElementById("lblResult").innerHTML= yearAccident[contra];

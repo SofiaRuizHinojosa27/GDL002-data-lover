@@ -1,10 +1,15 @@
 require('../src/data.js');
-require('../src/data/injuries/injuries.json');
+const INJURIES= require('../src/data/injuries/injuries.json');
 
+describe('injuries', () => {
+  it('should be an object', () => {
+    expect(typeof INJURIES).toBe('object');
+  });
+  });
 
 describe('function yearAccident', () => {
-  it('should be a function', () => {
-    expect(window.datalover.yearAccident()).toBe("function");
+  it('should return yearAccident 1960', () => {
+    expect(window.datalover.yearAccident(INJURIES)[0]).toEqual({"Automovil": "sin datos", "Bicicleta": "sin datos", "Motocicleta": "sin datos", "Year": "1960"});
   });
   });
 
